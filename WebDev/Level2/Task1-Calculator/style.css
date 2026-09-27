@@ -13,46 +13,59 @@ body{
 
 .box{
     background-color: rgb(7, 7, 7);
-    height:500px;
-    width: 350px;
+    height:510px;
+    width: 340px;
     border-radius: 3%;
-    text-align: left;
-    border: 1px solid gray;
     padding: 15px;
+    box-shadow: 4px 4px 10px rgba(221, 219, 219, 0.582);
 }
 
 .headName{
     color: white;
+    margin-left: 35%;
+    padding-bottom: 10px;
 }
 
 input{
-    margin-top: 15px;
+    color: white;
     height: 100px;
-    width: 345px;
+    width: 326px;
     font-size: 40px;
-    background-color: transparent;
-    border : none;
-    color: rgb(114, 114, 114);
+    background: black;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    text-align: right;
+}
+
+input:focus{
+    outline: none;
 }
 
 .btn{
     margin: 17px 10px 0px 0px;
     height: 55px;
-    width: 74px;
+    width: 71px;
     border-radius: 10%;
     border : none;
     font-size: 130%;
     background-color: rgb(39, 39, 39);
     color: white;
+    cursor: pointer;
 }
 
 .btnf{
     margin: 17px 10px 0px 0px;
     height: 55px;
-    width: 74px;
+    width: 21%;
     border-radius: 10%;
     border : none;
     font-size: 130%;
     background-color: rgb(104, 104, 104);
     color: white;
+    cursor: pointer;
+}
+
+.btn:hover, .btnf:hover{
+    border: 1px solid black;
 }
