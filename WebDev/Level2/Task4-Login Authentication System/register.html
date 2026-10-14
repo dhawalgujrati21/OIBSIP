@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <main class="auth-card">
+        <h1>Create Account</h1>
+        <p class="subtitle">Register to get started.</p>
+
+        <form id="registerForm">
+            <label for="username">Username</label>
+            <input id="username" name="username" required
+                   minlength="3" maxlength="30" autocomplete="username">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email"
+                   required autocomplete="email">
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password"
+                   required minlength="8" autocomplete="new-password">
+
+            <p class="hint">Use at least 8 characters and at least 1 number.</p>
+
+            <button type="submit">Register</button>
+            <p id="message" class="message" role="status"></p>
+        </form>
+
+        <p class="switch-page">
+            Already registered? <a href="login.html">Log in</a>
+        </p>
+    </main>
+</body>
+</html>
