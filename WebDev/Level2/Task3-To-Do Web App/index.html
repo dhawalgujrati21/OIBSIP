@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="app">
+        <header class="header">
+            <h1>My To-Do List</h1>
+            <p>Plan your day. Complete your goals.</p>
+        </header>
+
+        <form id="taskForm" class="task-form">
+            <input type="text" id="taskInput" placeholder="What do you need to do?" maxlength="200" autocomplete="off" aria-label="New task" required>
+            <button type="submit" class="add-btn">+ Add Task</button>
+        </form>
+
+        <section class="task-section">
+            <div class="section-heading">
+                <h2>Pending Tasks</h2>
+                <span id="pendingCount" class="count">0 pending</span>
+            </div>
+
+            <ul id="pendingList" class="task-list"></ul>
+            <p id="pendingEmpty" class="empty-state">
+                You're all caught up! Add a task to get started.
+            </p>
+        </section>
+
+        <section class="task-section completed-section">
+            <div class="section-heading">
+                <h2>Completed Tasks</h2>
+                <span id="completedCount" class="count completed-count">
+                    0 completed
+                </span>
+            </div>
+
+            <ul id="completedList" class="task-list"></ul>
+            <p id="completedEmpty" class="empty-state">
+                No completed tasks yet. You've got this!
+            </p>
+        </section>
+
+        <footer>
+            Your tasks are saved automatically on this device.
+        </footer>
+    </main>
+
+</body>
+</html>
